@@ -9,8 +9,9 @@
     "build:release": "NODE_ENV=production webpack --progress --colors -p",
     "server": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "de dist",
-    "lint": "eslint src"
+    "clean": "de dist esdoc",
+    "lint": "eslint src",
+    "doc": "esdoc -c esdoc.json"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "babel-loader": "6.2.1",
     "babel-preset-es2015": "6.3.13",
     "del-cli": "0.1.2",
+    "esdoc": "0.4.3",
     "eslint": "1.10.3",
     "file-loader": "0.8.5",
     "webpack": "1.12.12",
