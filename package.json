@@ -1,0 +1,36 @@
+{
+  "name": "twojs-exercise",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors -p",
+    "build:watch": "webpack --progress --colors --watch -p",
+    "build:release": "NODE_ENV=production webpack --progress --colors -p",
+    "server": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/70-10/twojs-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/70-10/twojs-exercise/issues"
+  },
+  "homepage": "https://github.com/70-10/twojs-exercise#readme",
+  "dependencies": {
+    "jquery": "2.2.0",
+    "two.js": "0.5.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.4.5",
+    "babel-loader": "6.2.1",
+    "babel-preset-es2015": "6.3.13",
+    "file-loader": "0.8.5",
+    "webpack": "1.12.12",
+    "webpack-dev-server": "1.14.1"
+  }
+}
